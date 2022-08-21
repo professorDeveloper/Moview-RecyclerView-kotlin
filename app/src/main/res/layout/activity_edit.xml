@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMovieActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Movies"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar2" />
+
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="350dp"
+            android:layout_height="51dp"
+            android:hint="Movie Name"
+            android:textSize="18sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:maxLines="1"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+        <EditText
+            android:id="@+id/edit_author"
+            android:layout_width="350dp"
+            android:layout_height="51dp"
+            android:hint="Athors names"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="2"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <EditText
+            android:id="@+id/edit_description"
+            android:layout_width="350dp"
+            android:layout_height="212dp"
+            android:layout_marginTop="30dp"
+            android:hint="Athors Name"
+            android:gravity="start|center"
+            android:paddingBottom="150dp"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingEnd="10dp"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_author" />
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="350dp"
+            android:layout_height="51dp"
+            android:background="@drawable/rectangle_1"
+            android:fontFamily="@font/roboto_medium"
+            android:hint="Movie Date"
+            android:maxLines="2"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_description" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="124dp"
+            android:layout_height="57dp"
+            android:id="@+id/edited"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            app:cardBackgroundColor="@color/needColor"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="12dp"
+            android:layout_marginBottom="20dp"
+            app:cardMaxElevation="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_date">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Edited"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
